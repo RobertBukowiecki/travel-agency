@@ -1,0 +1,19 @@
+.animatedSwitchWrapper {
+  position: relative;
+  @keyframes ease-up {
+      0% {
+        top: 200px;
+      }
+      100% {
+        top: 0;
+      }
+  }
+
+  > :first-child ~ * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: ease-up 1s ease-in-out;
+  }
+}
