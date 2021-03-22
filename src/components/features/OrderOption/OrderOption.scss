@@ -35,3 +35,12 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 992px) {
+  .component {
+    text-align: center;
+  }
+  .icon {
+    width: 100%;
+  }
+}
